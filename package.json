@@ -1,0 +1,15 @@
+{
+  "name": "yogi-assets",
+  "version": "1.0.0",
+  "description": "Public Assets Repository",
+  "license": "GPL-3.0+",
+  "scripts": {
+    "generate": "yarn run generate:registry && yarn run generate:tokenlist",
+    "generate:registry": "node scripts/generate-registry.js",
+    "generate:tokenlist": "node scripts/generate-tokenlist.js"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "ethers": "^5.1.0"
+  }
+}
