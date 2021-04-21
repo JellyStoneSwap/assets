@@ -1,0 +1,131 @@
+{
+    "tokens": {
+        "bnb": {
+            "address": "bnb",
+            "name": "BNB",
+            "symbol": "BNB",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/info/logo.png"
+        },
+        "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c": {
+            "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+            "name": "Wrapped BNB",
+            "symbol": "WBNB",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png"
+        },
+        "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56": {
+            "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+            "name": "BUSD Token",
+            "symbol": "BUSD",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56/logo.png"
+        },
+        "0x55d398326f99059fF775485246999027B3197955": {
+            "address": "0x55d398326f99059fF775485246999027B3197955",
+            "name": "Tether USD",
+            "symbol": "USDT",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x55d398326f99059fF775485246999027B3197955/logo.png"
+        },
+        "0x2170Ed0880ac9A755fd29B2688956BD959F933F8": {
+            "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+            "name": "Ethereum Token",
+            "symbol": "ETH",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x2170Ed0880ac9A755fd29B2688956BD959F933F8/logo.png"
+        },
+        "0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402": {
+            "address": "0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402",
+            "name": "Polkadot Token",
+            "symbol": "DOT",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402/logo.png"
+        },
+        "0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47": {
+            "address": "0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47",
+            "name": "Cardano Token",
+            "symbol": "ADA",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47/logo.png"
+        },
+        "0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE": {
+            "address": "0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE",
+            "name": "XRP Token",
+            "symbol": "XRP",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE/logo.png"
+        },
+        "0xBf5140A22578168FD562DCcF235E5D43A02ce9B1": {
+            "address": "0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
+            "name": "Uniswap",
+            "symbol": "UNI",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xBf5140A22578168FD562DCcF235E5D43A02ce9B1/logo.png"
+        },
+        "0x4338665CBB7B2485A8855A139b75D5e34AB0DB94": {
+            "address": "0x4338665CBB7B2485A8855A139b75D5e34AB0DB94",
+            "name": "Litecoin Token",
+            "symbol": "LTC",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x4338665CBB7B2485A8855A139b75D5e34AB0DB94/logo.png"
+        },
+        "0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf": {
+            "address": "0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf",
+            "name": "Bitcoin Cash Token",
+            "symbol": "BCH",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf/logo.png"
+        },
+        "0xbA2aE424d960c26247Dd6c32edC70B295c744C43": {
+            "address": "0xbA2aE424d960c26247Dd6c32edC70B295c744C43",
+            "name": "Dogecoin",
+            "symbol": "DOGE",
+            "decimals": 8,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xbA2aE424d960c26247Dd6c32edC70B295c744C43/logo.png"
+        },
+        "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d": {
+            "address": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+            "name": "USD Coin",
+            "symbol": "USDC",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d/logo.png"
+        },
+        "0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6": {
+            "address": "0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6",
+            "name": "EOS Token",
+            "symbol": "EOS",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6/logo.png"
+        }
+    },
+    "untrusted": []
+}
