@@ -215,8 +215,8 @@ function getLogoUrl(assets, address) {
 	if (address === 'bnb') {
 		return 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/info/logo.png'
 	}
-	if (assets.local.includes(address.toLowerCase())) {
-		return `https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/${address.toLowerCase()}.png`
+	if (assets.local.includes(address)) {
+		return `https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/${address}.png`
 	}
 	if (assets.trustwallet.includes(address)) {
 		return `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/${address}/logo.png`;
