@@ -1,6 +1,6 @@
 {
     "name": "yogi",
-    "timestamp": "2021-04-21T00:00:00.000Z",
+    "timestamp": "2021-04-24T00:00:00.000Z",
     "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/logos/logo512.png",
     "keywords": [
         "yogi",
@@ -12,6 +12,13 @@
         "patch": 0
     },
     "tokens": [
+        {
+            "address": "0xa20FFbd8c1541E31145a9C8d34833fd4b2BC90e5",
+            "chainId": 56,
+            "name": "Yogi",
+            "symbol": "YOGI",
+            "decimals": 18
+        },
         {
             "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
             "chainId": 56,

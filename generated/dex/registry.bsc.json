@@ -9,6 +9,15 @@
             "hasIcon": true,
             "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/info/logo.png"
         },
+        "0xa20FFbd8c1541E31145a9C8d34833fd4b2BC90e5": {
+            "address": "0xa20FFbd8c1541E31145a9C8d34833fd4b2BC90e5",
+            "name": "Yogi",
+            "symbol": "YOGI",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": false,
+            "logoUrl": ""
+        },
         "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c": {
             "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
             "name": "Wrapped BNB",
