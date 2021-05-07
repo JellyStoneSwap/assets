@@ -1,6 +1,6 @@
 {
     "name": "yogi",
-    "timestamp": "2021-04-25T00:00:00.000Z",
+    "timestamp": "2021-05-07T00:00:00.000Z",
     "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/logos/logo512.png",
     "keywords": [
         "yogi",
@@ -123,6 +123,14 @@
             "symbol": "EOS",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6/logo.png"
+        },
+        {
+            "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+            "chainId": 56,
+            "name": "PancakeSwap Token",
+            "symbol": "Cake",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png"
         }
     ]
 }
