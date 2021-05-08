@@ -250,8 +250,8 @@
       "decimals": 18,
       "precision": 3,
       "color": "#666092",
-      "hasIcon": false,
-      "logoUrl": ""
+      "hasIcon": true,
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/0x85EAC5Ac2F758618dFa09bDbe0cf174e7d574D5B.png"
     },
     "0x52CE071Bd9b1C4B00A0b92D298c512478CaD67e8": {
       "address": "0x52CE071Bd9b1C4B00A0b92D298c512478CaD67e8",
