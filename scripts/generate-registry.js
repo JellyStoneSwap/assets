@@ -58,9 +58,7 @@ async function generate(lists, data, metadata) {
   await generateNetwork('polygon', lists, data, metadata);
 }
 
-async function generateNetwork(network, lists, data, metadata) {
-  console.log('generateNetwork', 'network', network, CHAIN_IDS[network]);
- 
+async function generateNetwork(network, lists, data, metadata) { 
   const untrusted = lists.untrusted[network];
   const listedTokens = DEFAULT_LISTED[network];
   for (const address of lists.listed[network]) {
@@ -154,7 +152,7 @@ async function getData() {
 
 async function getMetadata(tokens, overwrite) {
   const bsc = await getNetworkMetadata('bsc', tokens.bsc, overwrite.bsc);
-  const polygon = await getNetworkMetadata('polygon', tokens.bsc, overwrite.bsc);
+  const polygon = await getNetworkMetadata('polygon', tokens.polygon, overwrite.polygon);
   
   return { bsc, polygon };
 }

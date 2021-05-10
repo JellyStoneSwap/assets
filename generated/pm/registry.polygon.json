@@ -1,0 +1,38 @@
+{
+  "tokens": {
+    "0xc2132D05D31c914a87C6611C10748AEb04B58e8F": {
+      "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+      "id": "tether",
+      "name": "(PoS) Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "precision": 3,
+      "color": "#c5ccb8",
+      "hasIcon": true,
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0xc2132D05D31c914a87C6611C10748AEb04B58e8F.png"
+    },
+    "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174": {
+      "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+      "id": "usd-coin",
+      "name": "USD Coin (PoS)",
+      "symbol": "USDC",
+      "decimals": 6,
+      "precision": 3,
+      "color": "#5d6872",
+      "hasIcon": true,
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174.png"
+    },
+    "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063": {
+      "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+      "id": "dai",
+      "name": "(PoS) Dai Stablecoin",
+      "symbol": "DAI",
+      "decimals": 18,
+      "precision": 3,
+      "color": "#8b5580",
+      "hasIcon": true,
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063.png"
+    }
+  },
+  "untrusted": []
+}
