@@ -62,19 +62,7 @@ async function getData() {
   const metadataOverwriteFile = await fs.readFileSync('data/metadataOverwrite.json');
   const metadataOverwrite = JSON.parse(metadataOverwriteFile);
   
-  const localAssetDirFiles = await fs.readdirSync('assets');
-  const localAssets = localAssetDirFiles
-  .filter(assetFile => assetFile !== 'index.json')
-  .map(assetFile => assetFile.split('.png')[0]);
-   
-  const assets = {
-    local: localAssets
-  }
-  
-  return {
-    metadataOverwrite,
-    assets,
-  };
+  return { metadataOverwrite };
 }
 
 async function getMetadata(tokens, overwrite) {
@@ -145,7 +133,7 @@ function getTokens(data, metadata) {
         name,
         symbol,
         decimals,
-        logoURI: getLogoURI(data.assets, address),
+        logoURI: getLogoUrl(chainId, address),
       });
     }
   }
@@ -153,14 +141,11 @@ function getTokens(data, metadata) {
   return tokens;
 }
 
-function getLogoURI(assets, address) {
+function getLogoUrl(chainId, address) {
   if (address === 'native') {
-    return `https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/${chainid}/native.png`;
+    return `https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/${chainId}/native.png`;
   }
-  if (assets.local.includes(address)) {
-    return `https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/${chainid}/${address}.png`;
-  }
-  return undefined;
+  return `https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/${chainId}/${address}.png`;
 }
 
 run();

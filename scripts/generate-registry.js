@@ -8,7 +8,36 @@ const erc20 = require('../abi/ERC20.json');
 
 const DEFAULT_PRECISION = 3;
 
-const rpcProviderUrl = process.env.RPC_PROVIDER_URL || 'https://bsc-dataseed.binance.org/';
+const DEFAULT_LISTED = {
+  bsc: {
+    bnb: {
+      address: 'native',
+      name: 'BNB',
+      symbol: 'BNB',
+      decimals: 18,
+      precision: 3,
+      hasIcon: true,
+      logoUrl: getLogoUrl(56, null, 'native'),
+    },
+  },
+
+  polygon: {
+    matic: {
+      address: 'native',
+      name: 'MATIC',
+      symbol: 'MATIC',
+      decimals: 18,
+      precision: 3,
+      hasIcon: true,
+      logoUrl: getLogoUrl(137, null, 'native'),
+    },
+  }
+}
+
+const CHAIN_IDS = {
+  bsc: 56,
+  polygon: 137
+};
 
 async function run() {
   try {
@@ -26,21 +55,14 @@ async function run() {
 
 async function generate(lists, data, metadata) {
   await generateNetwork('bsc', lists, data, metadata);
+  await generateNetwork('polygon', lists, data, metadata);
 }
 
 async function generateNetwork(network, lists, data, metadata) {
+  console.log('generateNetwork', 'network', network, CHAIN_IDS[network]);
+ 
   const untrusted = lists.untrusted[network];
-  const listedTokens = {
-    bnb: {
-      address: 'bnb',
-      name: 'BNB',
-      symbol: 'BNB',
-      decimals: 18,
-      precision: 3,
-      hasIcon: true,
-      logoUrl: getLogoUrl(data.assets, 'bnb'),
-    },
-  };
+  const listedTokens = DEFAULT_LISTED[network];
   for (const address of lists.listed[network]) {
     listedTokens[address] = {
       address,
@@ -48,13 +70,13 @@ async function generateNetwork(network, lists, data, metadata) {
       symbol: metadata[network][address].symbol,
       decimals: metadata[network][address].decimals,
       precision: data.precision[network][address] || DEFAULT_PRECISION,
-      hasIcon: data.assets.trustwallet.includes(address) || data.assets.local.includes(address),
-      logoUrl: getLogoUrl(data.assets, address),
+      hasIcon: true,
+      logoUrl: getLogoUrl(CHAIN_IDS[network], address),
     };
   }
   const uiTokens = {};
   for (const address of Object.keys(lists.eligible[network])) {
-    const color = getColor(network, address, data);
+    const color = getColor(address, data);
     uiTokens[address] = {
       address,
       id: data.coingecko[network][address] || '',
@@ -63,12 +85,12 @@ async function generateNetwork(network, lists, data, metadata) {
       decimals: metadata[network][address].decimals,
       precision: data.precision[network][address] || DEFAULT_PRECISION,
       color: data.color[network][address] || color,
-      hasIcon: data.assets.trustwallet.includes(address) || data.assets.local.includes(address),
-      logoUrl: getLogoUrl(data.assets, address),
+      hasIcon: true,
+      logoUrl: getLogoUrl(CHAIN_IDS[network], address),
     };
   }
   for (const address of lists.ui[network]) {
-    const color = getColor(network, address, data);
+    const color = getColor(address, data);
     uiTokens[address] = {
       address,
       id: data.coingecko[network][address] || '',
@@ -77,8 +99,8 @@ async function generateNetwork(network, lists, data, metadata) {
       decimals: metadata[network][address].decimals,
       precision: data.precision[network][address] || DEFAULT_PRECISION,
       color: data.color[network][address] || color,
-      hasIcon: data.assets.trustwallet.includes(address) || data.assets.local.includes(address),
-      logoUrl: getLogoUrl(data.assets, address),
+      hasIcon: true,
+      logoUrl: getLogoUrl(CHAIN_IDS[network], address),
     };
   }
   const dexData = {
@@ -122,45 +144,30 @@ async function getData() {
   const precisionFile = await fs.readFileSync('data/precision.json');
   const precision = JSON.parse(precisionFile);
   
-  const localAssetDirFiles = await fs.readdirSync('assets');
-  const localAssets = localAssetDirFiles
-  .filter(assetFile => assetFile !== 'index.json')
-  .map(assetFile => assetFile.split('.png')[0]);
-  
-  const trustwalletListUrl
-  = 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/allowlist.json';
-  const trustwalletListResponse = await axios.get(trustwalletListUrl);
-  const trustwalletList = trustwalletListResponse.data;
-  
-  const assets = {
-    local: localAssets,
-    trustwallet: trustwalletList,
-  }
-  
   return {
     coingecko,
     color,
     precision,
-    metadataOverwrite,
-    assets,
+    metadataOverwrite
   };
 }
 
 async function getMetadata(tokens, overwrite) {
   const bsc = await getNetworkMetadata('bsc', tokens.bsc, overwrite.bsc);
+  const polygon = await getNetworkMetadata('polygon', tokens.bsc, overwrite.bsc);
   
-  return {
-    bsc
-  };
+  return { bsc, polygon };
 }
 
 async function getNetworkMetadata(network, tokens, overwrite) {
   const providers = {
-    bsc: new ethers.providers.JsonRpcProvider(rpcProviderUrl),
+    bsc: new ethers.providers.JsonRpcProvider('https://bsc-dataseed.binance.org/'),
+    polygon: new ethers.providers.JsonRpcProvider('https://rpc-mainnet.maticvigil.com/')
   };
   
   const multicallContract = {
     bsc: '0x7B23A56572cBC04035da7852a5427066EC2C2040',
+    polygon: '0x7B23A56572cBC04035da7852a5427066EC2C2040',
   };
   
   const provider = providers[network];
@@ -194,10 +201,7 @@ async function getNetworkMetadata(network, tokens, overwrite) {
   return tokenMetadata;
 }
 
-function getColor(network, address, data) {
-  if (network !== 'bsc') {
-    return;
-  }
+function getColor(address, data) {
   let sum = 0;
   for (const char of address) {
     if (char === 'x') {
@@ -210,28 +214,16 @@ function getColor(network, address, data) {
   return colorList[sum % colorList.length];
 }
 
-function getLogoUrl(assets, address) {
-  address = getMainnetAddress(address);
-  if (address === 'bnb') {
-    return 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/info/logo.png'
+function getLogoUrl(chainId, address) {
+  if (address === 'native') {
+    return `https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/${chainId}/native.png`;
   }
-  if (assets.local.includes(address)) {
-    return `https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/${address}.png`
-  }
-  if (assets.trustwallet.includes(address)) {
-    return `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/${address}/logo.png`;
-  }
-  return '';
-}
-
-function getMainnetAddress(address) {
-  // FIXME: not needed
-  const map = {};
-  return map[address] || address;
+  return `https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/${chainId}/${address}.png`;
 }
 
 function mergeTokenLists(lists) {
   const bsc = [];
+  const polygon = [];
   
   for (const datasetName in lists) {
     if (datasetName === 'untrusted') {
@@ -246,19 +238,29 @@ function mergeTokenLists(lists) {
     } else {
       dataset_bsc = Object.keys(dataset.bsc);
     }
+
+    let dataset_polygon = [];
+    if (dataset.polygon instanceof Array) {
+      dataset_polygon = dataset.polygon;
+    } else {
+      dataset_polygon = Object.keys(dataset.polygon);
+    }
     
     for (const token of dataset_bsc) {
       bsc.push(token);
     }
+
+    for (const token of dataset_polygon) {
+      polygon.push(token);
+    }
   }
   
-  return {
-    bsc,
-  };
+  return { bsc, polygon };
 }
 
 function verifyInputs(lists) {
   verifyNetworkInputs(lists, 'bsc');
+  verifyNetworkInputs(lists, 'polygon');
 }
 
 function verifyNetworkInputs(lists, network) {
