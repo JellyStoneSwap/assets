@@ -1,6 +1,6 @@
 {
     "name": "yogi",
-    "timestamp": "2021-05-07T00:00:00.000Z",
+    "timestamp": "2021-05-10T00:00:00.000Z",
     "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/logos/logo512.png",
     "keywords": [
         "yogi",
@@ -17,120 +17,133 @@
             "chainId": 56,
             "name": "Yogi",
             "symbol": "YOGI",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/0xa20FFbd8c1541E31145a9C8d34833fd4b2BC90e5.png"
+            "decimals": 18
         },
         {
             "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
             "chainId": 56,
             "name": "Wrapped BNB",
             "symbol": "WBNB",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png"
+            "decimals": 18
         },
         {
             "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
             "chainId": 56,
             "name": "BUSD Token",
             "symbol": "BUSD",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56/logo.png"
+            "decimals": 18
         },
         {
             "address": "0x55d398326f99059fF775485246999027B3197955",
             "chainId": 56,
             "name": "Tether USD",
             "symbol": "USDT",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x55d398326f99059fF775485246999027B3197955/logo.png"
+            "decimals": 18
         },
         {
             "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
             "chainId": 56,
             "name": "Ethereum Token",
             "symbol": "ETH",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x2170Ed0880ac9A755fd29B2688956BD959F933F8/logo.png"
+            "decimals": 18
         },
         {
             "address": "0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402",
             "chainId": 56,
             "name": "Polkadot Token",
             "symbol": "DOT",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402/logo.png"
+            "decimals": 18
         },
         {
             "address": "0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47",
             "chainId": 56,
             "name": "Cardano Token",
             "symbol": "ADA",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47/logo.png"
+            "decimals": 18
         },
         {
             "address": "0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE",
             "chainId": 56,
             "name": "XRP Token",
             "symbol": "XRP",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE/logo.png"
+            "decimals": 18
         },
         {
             "address": "0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
             "chainId": 56,
             "name": "Uniswap",
             "symbol": "UNI",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xBf5140A22578168FD562DCcF235E5D43A02ce9B1/logo.png"
+            "decimals": 18
         },
         {
             "address": "0x4338665CBB7B2485A8855A139b75D5e34AB0DB94",
             "chainId": 56,
             "name": "Litecoin Token",
             "symbol": "LTC",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x4338665CBB7B2485A8855A139b75D5e34AB0DB94/logo.png"
+            "decimals": 18
         },
         {
             "address": "0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf",
             "chainId": 56,
             "name": "Bitcoin Cash Token",
             "symbol": "BCH",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf/logo.png"
+            "decimals": 18
         },
         {
             "address": "0xbA2aE424d960c26247Dd6c32edC70B295c744C43",
             "chainId": 56,
             "name": "Dogecoin",
             "symbol": "DOGE",
-            "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xbA2aE424d960c26247Dd6c32edC70B295c744C43/logo.png"
+            "decimals": 8
         },
         {
             "address": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
             "chainId": 56,
             "name": "USD Coin",
             "symbol": "USDC",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d/logo.png"
+            "decimals": 18
         },
         {
             "address": "0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6",
             "chainId": 56,
             "name": "EOS Token",
             "symbol": "EOS",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6/logo.png"
+            "decimals": 18
         },
         {
             "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
             "chainId": 56,
             "name": "PancakeSwap Token",
             "symbol": "Cake",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png"
+            "decimals": 18
+        },
+        {
+            "address": "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+            "chainId": 56,
+            "name": "Dai Token",
+            "symbol": "DAI",
+            "decimals": 18
+        },
+        {
+            "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+            "chainId": 137,
+            "name": "(PoS) Tether USD",
+            "symbol": "USDT",
+            "decimals": 6
+        },
+        {
+            "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+            "chainId": 137,
+            "name": "USD Coin (PoS)",
+            "symbol": "USDC",
+            "decimals": 6
+        },
+        {
+            "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+            "chainId": 137,
+            "name": "(PoS) Dai Stablecoin",
+            "symbol": "DAI",
+            "decimals": 18
         }
     ]
 }

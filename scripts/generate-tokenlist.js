@@ -5,8 +5,6 @@ const fs = require('fs');
 const multicall = require('../abi/Multicall.json');
 const erc20 = require('../abi/ERC20.json');
 
-const rpcProviderUrl = process.env.RPC_PROVIDER_URL || 'https://bsc-dataseed.binance.org/';
-
 async function run() {
   try {
     const data = await getData();
@@ -23,6 +21,7 @@ async function run() {
     
     const vetted = {
       bsc: [...Object.keys(eligible.bsc), ...ui.bsc],
+      polygon: [...Object.keys(eligible.polygon), ...ui.polygon],
     };
     const vettedMetadata = await getMetadata(vetted, data.metadataOverwrite);
     const vettedTokens = getTokens(data, vettedMetadata);
@@ -67,15 +66,9 @@ async function getData() {
   const localAssets = localAssetDirFiles
   .filter(assetFile => assetFile !== 'index.json')
   .map(assetFile => assetFile.split('.png')[0]);
-  
-  const trustwalletListUrl
-  = 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/allowlist.json';
-  const trustwalletListResponse = await axios.get(trustwalletListUrl);
-  const trustwalletList = trustwalletListResponse.data;
-  
+   
   const assets = {
-    local: localAssets,
-    trustwallet: trustwalletList,
+    local: localAssets
   }
   
   return {
@@ -86,19 +79,20 @@ async function getData() {
 
 async function getMetadata(tokens, overwrite) {
   const bsc = await getNetworkMetadata('bsc', tokens.bsc, overwrite.bsc);
+  const polygon = await getNetworkMetadata('polygon', tokens.polygon, overwrite.polygon);
   
-  return {
-    bsc,
-  };
+  return { bsc, polygon };
 }
 
 async function getNetworkMetadata(network, tokens, overwrite) {
   const providers = {
-    bsc: new ethers.providers.JsonRpcProvider(rpcProviderUrl),
+    bsc: new ethers.providers.JsonRpcProvider('https://bsc-dataseed.binance.org/'),
+    polygon: new ethers.providers.JsonRpcProvider('https://rpc-mainnet.maticvigil.com/')
   };
   
   const multicallContract = {
     bsc: '0x7B23A56572cBC04035da7852a5427066EC2C2040',
+    polygon: '0x7B23A56572cBC04035da7852a5427066EC2C2040',
   };
   
   const provider = providers[network];
@@ -134,40 +128,39 @@ async function getNetworkMetadata(network, tokens, overwrite) {
 
 function getTokens(data, metadata) {
   const tokens = [];
-  for (const address in metadata.bsc) {
-    const chainId = 56;
-    const token = metadata.bsc[address];
-    const { decimals, symbol, name } = token;
-    tokens.push({
-      address,
-      chainId,
-      name,
-      symbol,
-      decimals,
-      logoURI: getLogoURI(data.assets, address),
-    });
+
+  const CHAIN_IDS = {
+    bsc: 56,
+    polygon: 137
+  };
+  
+  for (const chain in metadata) {
+    for (const address in metadata[chain]) {
+      const chainId = CHAIN_IDS[chain];
+      const token = metadata[chain][address];
+      const { decimals, symbol, name } = token;
+      tokens.push({
+        address,
+        chainId,
+        name,
+        symbol,
+        decimals,
+        logoURI: getLogoURI(data.assets, address),
+      });
+    }
   }
+
   return tokens;
 }
 
 function getLogoURI(assets, address) {
-  address = getMainnetAddress(address);
-  if (address === 'ether') {
-    return 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/info/logo.png'
+  if (address === 'native') {
+    return `https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/${chainid}/native.png`;
   }
   if (assets.local.includes(address)) {
-    return `https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/${address}.png`
-  }
-  if (assets.trustwallet.includes(address)) {
-    return `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/${address}/logo.png`;
+    return `https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/${chainid}/${address}.png`;
   }
   return undefined;
-}
-
-function getMainnetAddress(address) {
-  // FIXME: not needed
-  const map = {};
-  return map[address] || address;
 }
 
 run();
