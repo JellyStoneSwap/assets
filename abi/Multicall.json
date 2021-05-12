@@ -70,7 +70,7 @@
 					"type": "address"
 				}
 			],
-			"name": "getBnbBalance",
+			"name": "getBalance",
 			"outputs": [
 				{
 					"name": "balance",

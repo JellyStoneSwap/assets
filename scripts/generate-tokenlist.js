@@ -79,7 +79,7 @@ async function getNetworkMetadata(network, tokens, overwrite) {
   };
   
   const multicallContract = {
-    bsc: '0x7B23A56572cBC04035da7852a5427066EC2C2040',
+    bsc: '0x88a85d5B9358DAb64D1Ca6d49A0BBF8fC621A8F8',
     polygon: '0x7B23A56572cBC04035da7852a5427066EC2C2040',
   };
   
