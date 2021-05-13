@@ -20,7 +20,7 @@
         },
         "0xc2132D05D31c914a87C6611C10748AEb04B58e8F": {
             "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
-            "name": "(PoS) Tether USD",
+            "name": "Tether USD",
             "symbol": "USDT",
             "decimals": 6,
             "precision": 3,
@@ -38,7 +38,7 @@
         },
         "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063": {
             "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
-            "name": "(PoS) Dai Stablecoin",
+            "name": "Dai Stablecoin",
             "symbol": "DAI",
             "decimals": 18,
             "precision": 3,
@@ -56,7 +56,7 @@
         },
         "0xDA537104D6A5edd53c6fBba9A898708E465260b6": {
             "address": "0xDA537104D6A5edd53c6fBba9A898708E465260b6",
-            "name": "(PoS) yearn.finance",
+            "name": "yearn.finance",
             "symbol": "YFI",
             "decimals": 18,
             "precision": 3,
@@ -65,7 +65,7 @@
         },
         "0xb33EaAd8d922B1083446DC23f610c2567fB5180f": {
             "address": "0xb33EaAd8d922B1083446DC23f610c2567fB5180f",
-            "name": "Uniswap (PoS)",
+            "name": "Uniswap",
             "symbol": "UNI",
             "decimals": 18,
             "precision": 3,
@@ -83,7 +83,7 @@
         },
         "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6": {
             "address": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6",
-            "name": "(PoS) Wrapped BTC",
+            "name": "Wrapped BTC",
             "symbol": "WBTC",
             "decimals": 8,
             "precision": 3,
@@ -92,7 +92,7 @@
         },
         "0x8505b9d2254A7Ae468c0E9dd10Ccea3A837aef5c": {
             "address": "0x8505b9d2254A7Ae468c0E9dd10Ccea3A837aef5c",
-            "name": "(PoS) Compound",
+            "name": "Compound",
             "symbol": "COMP",
             "decimals": 18,
             "precision": 3,
@@ -110,7 +110,7 @@
         },
         "0xA1c57f48F0Deb89f569dFbE6E2B7f46D33606fD4": {
             "address": "0xA1c57f48F0Deb89f569dFbE6E2B7f46D33606fD4",
-            "name": "(PoS) Decentraland MANA",
+            "name": "Decentraland",
             "symbol": "MANA",
             "decimals": 18,
             "precision": 3,
@@ -119,7 +119,7 @@
         },
         "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a": {
             "address": "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a",
-            "name": "SushiToken (PoS)",
+            "name": "SushiToken",
             "symbol": "SUSHI",
             "decimals": 18,
             "precision": 3,
@@ -128,7 +128,7 @@
         },
         "0x172370d5Cd63279eFa6d502DAB29171933a610AF": {
             "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-            "name": "CRV (PoS)",
+            "name": "Curve DAO Token",
             "symbol": "CRV",
             "decimals": 18,
             "precision": 3,
