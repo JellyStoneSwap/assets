@@ -48,7 +48,7 @@
       "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
       "id": "ethereum",
       "name": "Wrapped Ether",
-      "symbol": "WETH",
+      "symbol": "ETH",
       "decimals": 18,
       "precision": 3,
       "color": "#c7bdf4",
