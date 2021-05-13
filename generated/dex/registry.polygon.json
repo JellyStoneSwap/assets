@@ -44,6 +44,15 @@
             "precision": 3,
             "hasIcon": true,
             "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063.png"
+        },
+        "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619": {
+            "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+            "name": "Wrapped Ether",
+            "symbol": "WETH",
+            "decimals": 18,
+            "precision": 3,
+            "hasIcon": true,
+            "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619.png"
         }
     },
     "untrusted": []

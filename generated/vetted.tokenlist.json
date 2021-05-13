@@ -1,6 +1,6 @@
 {
     "name": "yogi",
-    "timestamp": "2021-05-12T00:00:00.000Z",
+    "timestamp": "2021-05-13T00:00:00.000Z",
     "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/logos/logo512.png",
     "keywords": [
         "yogi",
@@ -259,6 +259,14 @@
             "symbol": "DAI",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063.png"
+        },
+        {
+            "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+            "chainId": 137,
+            "name": "Wrapped Ether",
+            "symbol": "WETH",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619.png"
         }
     ]
 }
