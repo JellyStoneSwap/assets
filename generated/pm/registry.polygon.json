@@ -54,6 +54,105 @@
       "color": "#c7bdf4",
       "hasIcon": true,
       "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619.png"
+    },
+    "0xDA537104D6A5edd53c6fBba9A898708E465260b6": {
+      "address": "0xDA537104D6A5edd53c6fBba9A898708E465260b6",
+      "id": "yearn-finance",
+      "name": "(PoS) yearn.finance",
+      "symbol": "YFI",
+      "decimals": 18,
+      "precision": 3,
+      "color": "#c7bdf4",
+      "hasIcon": true,
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0xDA537104D6A5edd53c6fBba9A898708E465260b6.png"
+    },
+    "0xb33EaAd8d922B1083446DC23f610c2567fB5180f": {
+      "address": "0xb33EaAd8d922B1083446DC23f610c2567fB5180f",
+      "id": "uniswap",
+      "name": "Uniswap (PoS)",
+      "symbol": "UNI",
+      "decimals": 18,
+      "precision": 3,
+      "color": "#a593a5",
+      "hasIcon": true,
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0xb33EaAd8d922B1083446DC23f610c2567fB5180f.png"
+    },
+    "0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39": {
+      "address": "0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39",
+      "id": "chainlink",
+      "name": "ChainLink Token",
+      "symbol": "LINK",
+      "decimals": 18,
+      "precision": 3,
+      "color": "#6eaa78",
+      "hasIcon": true,
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39.png"
+    },
+    "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6": {
+      "address": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6",
+      "id": "bitcoin",
+      "name": "(PoS) Wrapped BTC",
+      "symbol": "WBTC",
+      "decimals": 8,
+      "precision": 3,
+      "color": "#666092",
+      "hasIcon": true,
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6.png"
+    },
+    "0x8505b9d2254A7Ae468c0E9dd10Ccea3A837aef5c": {
+      "address": "0x8505b9d2254A7Ae468c0E9dd10Ccea3A837aef5c",
+      "id": "compound",
+      "name": "(PoS) Compound",
+      "symbol": "COMP",
+      "decimals": 18,
+      "precision": 3,
+      "color": "#5d2e9a",
+      "hasIcon": true,
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0x8505b9d2254A7Ae468c0E9dd10Ccea3A837aef5c.png"
+    },
+    "0xD6DF932A45C0f255f85145f286eA0b292B21C90B": {
+      "address": "0xD6DF932A45C0f255f85145f286eA0b292B21C90B",
+      "id": "aave",
+      "name": "Aave (PoS)",
+      "symbol": "AAVE",
+      "decimals": 18,
+      "precision": 3,
+      "color": "#557064",
+      "hasIcon": true,
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0xD6DF932A45C0f255f85145f286eA0b292B21C90B.png"
+    },
+    "0xA1c57f48F0Deb89f569dFbE6E2B7f46D33606fD4": {
+      "address": "0xA1c57f48F0Deb89f569dFbE6E2B7f46D33606fD4",
+      "id": "decentraland",
+      "name": "(PoS) Decentraland MANA",
+      "symbol": "MANA",
+      "decimals": 18,
+      "precision": 3,
+      "color": "#433455",
+      "hasIcon": true,
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0xA1c57f48F0Deb89f569dFbE6E2B7f46D33606fD4.png"
+    },
+    "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a": {
+      "address": "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a",
+      "id": "sushi",
+      "name": "SushiToken (PoS)",
+      "symbol": "SUSHI",
+      "decimals": 18,
+      "precision": 3,
+      "color": "#c7bdf4",
+      "hasIcon": true,
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a.png"
+    },
+    "0x172370d5Cd63279eFa6d502DAB29171933a610AF": {
+      "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
+      "id": "curve-dao-token",
+      "name": "CRV (PoS)",
+      "symbol": "CRV",
+      "decimals": 18,
+      "precision": 3,
+      "color": "#5d2e9a",
+      "hasIcon": true,
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0x172370d5Cd63279eFa6d502DAB29171933a610AF.png"
     }
   },
   "untrusted": []
