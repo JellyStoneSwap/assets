@@ -25,7 +25,7 @@
     "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174": {
       "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
       "id": "usd-coin",
-      "name": "USD Coin (PoS)",
+      "name": "USD Coin",
       "symbol": "USDC",
       "decimals": 6,
       "precision": 3,
@@ -113,7 +113,7 @@
     "0xD6DF932A45C0f255f85145f286eA0b292B21C90B": {
       "address": "0xD6DF932A45C0f255f85145f286eA0b292B21C90B",
       "id": "aave",
-      "name": "Aave (PoS)",
+      "name": "Aave Token",
       "symbol": "AAVE",
       "decimals": 18,
       "precision": 3,

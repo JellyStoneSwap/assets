@@ -53,6 +53,16 @@
 			"decimals": 18,
 			"symbol": "CRV",
 			"name": "Curve DAO Token"	
+		},
+		"0xD6DF932A45C0f255f85145f286eA0b292B21C90B": {
+			"decimals": 18,
+			"symbol": "AAVE",
+			"name": "Aave Token"	
+		},
+		"0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174": {
+			"decimals": 6,
+			"symbol": "USDC",
+			"name": "USD Coin"	
 		}
 	}
 }

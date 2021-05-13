@@ -247,7 +247,7 @@
         {
             "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
             "chainId": 137,
-            "name": "USD Coin (PoS)",
+            "name": "USD Coin",
             "symbol": "USDC",
             "decimals": 6,
             "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174.png"
@@ -311,7 +311,7 @@
         {
             "address": "0xD6DF932A45C0f255f85145f286eA0b292B21C90B",
             "chainId": 137,
-            "name": "Aave (PoS)",
+            "name": "Aave Token",
             "symbol": "AAVE",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0xD6DF932A45C0f255f85145f286eA0b292B21C90B.png"
