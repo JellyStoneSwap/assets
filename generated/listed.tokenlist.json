@@ -1,6 +1,6 @@
 {
     "name": "yogi",
-    "timestamp": "2021-05-13T00:00:00.000Z",
+    "timestamp": "2021-05-19T00:00:00.000Z",
     "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/logos/logo512.png",
     "keywords": [
         "yogi",
@@ -13,12 +13,12 @@
     },
     "tokens": [
         {
-            "address": "0xa20FFbd8c1541E31145a9C8d34833fd4b2BC90e5",
+            "address": "0x88888C8783a88aD40d995073Ab7FBbe8d34aCdA8",
             "chainId": 56,
             "name": "Yogi",
             "symbol": "YOGI",
             "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/56/0xa20FFbd8c1541E31145a9C8d34833fd4b2BC90e5.png"
+            "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/56/0x88888C8783a88aD40d995073Ab7FBbe8d34aCdA8.png"
         },
         {
             "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
@@ -227,6 +227,14 @@
             "symbol": "DODO",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/56/0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2.png"
+        },
+        {
+            "address": "0x88888C8783a88aD40d995073Ab7FBbe8d34aCdA8",
+            "chainId": 137,
+            "name": "Yogi",
+            "symbol": "YOGI",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/137/0x88888C8783a88aD40d995073Ab7FBbe8d34aCdA8.png"
         },
         {
             "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",

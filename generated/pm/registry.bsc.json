@@ -1,15 +1,15 @@
 {
   "tokens": {
-    "0xa20FFbd8c1541E31145a9C8d34833fd4b2BC90e5": {
-      "address": "0xa20FFbd8c1541E31145a9C8d34833fd4b2BC90e5",
+    "0x88888C8783a88aD40d995073Ab7FBbe8d34aCdA8": {
+      "address": "0x88888C8783a88aD40d995073Ab7FBbe8d34aCdA8",
       "id": "",
       "name": "Yogi",
       "symbol": "YOGI",
       "decimals": 18,
       "precision": 3,
-      "color": "#433455",
+      "color": "#6e6962",
       "hasIcon": true,
-      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/56/0xa20FFbd8c1541E31145a9C8d34833fd4b2BC90e5.png"
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/56/0x88888C8783a88aD40d995073Ab7FBbe8d34aCdA8.png"
     },
     "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c": {
       "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
@@ -296,6 +296,17 @@
       "color": "#c5ccb8",
       "hasIcon": true,
       "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/56/0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2.png"
+    },
+    "0xa20FFbd8c1541E31145a9C8d34833fd4b2BC90e5": {
+      "address": "0xa20FFbd8c1541E31145a9C8d34833fd4b2BC90e5",
+      "id": "",
+      "name": "Yogi",
+      "symbol": "YOGI",
+      "decimals": 18,
+      "precision": 3,
+      "color": "#433455",
+      "hasIcon": true,
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/56/0xa20FFbd8c1541E31145a9C8d34833fd4b2BC90e5.png"
     }
   },
   "untrusted": []
