@@ -253,5 +253,7 @@
             "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/56/0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2.png"
         }
     },
-    "untrusted": []
+    "untrusted": [
+        "0xa20FFbd8c1541E31145a9C8d34833fd4b2BC90e5"
+    ]
 }
