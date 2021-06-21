@@ -296,6 +296,17 @@
       "color": "#c5ccb8",
       "hasIcon": true,
       "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/56/0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2.png"
+    },
+    "0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5": {
+      "address": "0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5",
+      "id": "bakeryswap",
+      "name": "BakeryToken",
+      "symbol": "BAKE",
+      "decimals": 18,
+      "precision": 3,
+      "color": "#220730",
+      "hasIcon": true,
+      "logoUrl": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/56/0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5.png"
     }
   },
   "untrusted": [

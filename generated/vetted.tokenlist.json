@@ -1,6 +1,6 @@
 {
     "name": "yogi",
-    "timestamp": "2021-05-24T00:00:00.000Z",
+    "timestamp": "2021-06-21T00:00:00.000Z",
     "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/logos/logo512.png",
     "keywords": [
         "yogi",
@@ -227,6 +227,14 @@
             "symbol": "DODO",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/56/0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2.png"
+        },
+        {
+            "address": "0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5",
+            "chainId": 56,
+            "name": "BakeryToken",
+            "symbol": "BAKE",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/yogi-fi/yogi-assets/master/assets/56/0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5.png"
         },
         {
             "address": "0x88888C8783a88aD40d995073Ab7FBbe8d34aCdA8",
