@@ -1,4 +1,4 @@
-# Yogi Asset Repository
+# Jellystone Swap Asset Repository
 
 ## Lists
 
